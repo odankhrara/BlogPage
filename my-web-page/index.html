@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<!--Page name Fliq-->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title> HW1-Om Dankhara </title>
+    <style>
+        body {
+          font-family: sans-serif;
+          background: #e0f2ff;
+          color: #154c79;
+          padding: 1rem;
+        }
+    
+        h1 {text-align: center;}
+    
+        .container {
+          max-width: 600px;
+          margin: auto;
+          background: #fff;
+          padding: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+        }
+    
+        .form-legend {
+          text-align: center;
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+    
+        label {
+          display: block;
+          margin: .5rem 0 .25rem;
+        }
+    
+        input, select, textarea {
+          width: 100%;
+          padding: .5rem;
+          border: 1px solid #aaa;
+          border-radius: 5px;
+          font-size: 1rem;
+          margin: .25rem 0;
+          box-sizing: border-box;
+
+        }
+    
+        textarea {
+          min-height: 100px;
+        }
+    
+        .actions {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin:1r
+        }
+        .actions label {
+          display: inline-flex;    
+          align-items: center;     
+          gap: .4rem;               
+          margin: 0;
+        }
+
+
+    
+        button {
+
+          background: #154c79;
+          color: #fff;
+          padding: .5rem 1rem;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      </style>
+    </head>
+
+<body>
+    <main class="container" role="main" >
+    <h1>Fliq, My Blog Topic </h1>
+    <form action = "" method="post" novalidate >
+        <fieldset class ="field" style="border:0;padding:0;">
+            <legend class="form-legend">Blog Submission</legend>
+            <div class ="field">
+                <label for ="blog-title">Blog Title</label>
+                    <input type ="text" id="blog-title" name ="title" placeholder="Enter the title of your blog" autocomplete="off" minlength="3" required autofocus/>
+            </div>
+                <div class="field">
+                    <label for = "name">Name</label>
+                    <input type="text"  id="name" name="name"  placeholder="Enter your name" autocomplete="family-name" required/>
+            </div>
+                <div class ="field">
+                <label for ="email">Email</label>
+                    <input type="email"id="email"  name="email" placeholder="Enter your email"  autocomplete ="email" required />
+            </div>
+            <div class="feild">
+                <label for = "content">Content</label>
+                <textarea id="content" name="content" placeholder="Write Content Here" minlength="30" rows="4" required></textarea>
+
+            </div>
+                <label for ="category">Select Category</label>
+                    <select id ="category" name ="category" required>
+                        <option value=""disabled selected>Select a category</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Lifestyle">Lifestyle</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Education">Education</option>
+                    </select>
+            </div>
+            <div class = "actions">
+                <label class ="checkbox"for ="terms">
+                    <input type="checkbox" id="terms" name="terms" required/>
+                    <span> I agree to the terms and conditions.</span>
+                </label>
+                <button type ="submit">Publish Blog</button>
+            </div>
+        </fieldset>
+    </form>
+    <h2>Submissions:</h2>
+    <ul id="submissions"></ul>
+    
+</main>
+    <script src="Fliq.js?v=3"></script>
+</body>
+</html>
