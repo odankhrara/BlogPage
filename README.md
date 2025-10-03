@@ -1,6 +1,5 @@
 # BlogPage – Blog Submission App with AI Agents
 
-This project is part of **Homework 1 (Distributed Systems / Data236)**.  
 It combines a **frontend blog submission page** with **JavaScript validation** and an **agentic AI pipeline** (Planner → Reviewer → Finalizer) powered by a local LLM via Ollama.  
 Deployment is supported using **Docker** and **AWS ECS**.
 
